@@ -1,8 +1,8 @@
 package uno;
 
 public class Carta {
-	String simbolo;
-	String cor;
+	private String simbolo;
+	private String cor;
 	
 	public Carta(String simbolo, String cor){
 		this.simbolo = simbolo;
@@ -12,6 +12,14 @@ public class Carta {
 	public String toString() {
 		return simbolo + "-" + cor;
 	}
-	
 
+	public String getSimbolo() {
+		return simbolo;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+	
+	
 }
