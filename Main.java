@@ -34,8 +34,7 @@ public class Main {
 		 * 
 		 * */
 		
-		Carta vermelho0 = new Carta("0", "vermelho");
-		
-		System.out.println(vermelho0);
+		Deck deck = new Deck();
+		System.out.println(deck.arrayDeck);
 	}
 }

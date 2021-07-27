@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Deck {
-	ArrayList<Carta> deck = new ArrayList<>();
+	ArrayList<Carta> arrayDeck = new ArrayList<>();
 	
 	public Deck() {
-		deck = criarDeck();
-		Collections.shuffle(deck);
+		arrayDeck = criarDeck();
+		Collections.shuffle(arrayDeck);
 	}
 	
 	private ArrayList<Carta> criarDeck() {
@@ -40,8 +40,8 @@ public class Deck {
 	}
 	
 	public Carta comprarCarta() {
-		Carta comprada = deck.get(0);
-		deck.remove(0);
+		Carta comprada = arrayDeck.get(0);
+		arrayDeck.remove(0);
 		return comprada;
 	}
 	
