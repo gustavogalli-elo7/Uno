@@ -12,10 +12,7 @@ public class Main {
 		 * [jogador] jogadores
 		 * [queue] deck - 108 cartas - 5 cores
 		 * [array] maos dos jogadores
-		 * 
-		 * [carta] cartas normais - 0 a 9
-		 * [carta] cartas especiais - reverter, pular, +2, +4, trocaCor, 
-		 * [carta] vira (a carta da mesa)
+		 * [array<Carta>] vira (as cartas da mesa)
 		 * 
 		 * */
 		
@@ -34,7 +31,8 @@ public class Main {
 		 * 
 		 * */
 		
-		Deck deck = new Deck();
-		System.out.println(deck.arrayDeck);
+		Jogo jogo = new Jogo();
+//		jogo.iniciarJogo(new Deck());
+//		System.out.println(deck.arrayDeck);
 	}
 }

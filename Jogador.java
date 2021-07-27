@@ -12,9 +12,9 @@ public class Jogador {
 		this.nome = nome;
 	}
 	
-	public Carta jogadorCompra(Deck deck) {
-		return deck.comprarCarta();
-	}
+//	public Carta jogadorCompra(Deck deck) {
+//		return deck.comprarCarta();
+//	}
 	
 	public void receberCarta(Carta recebida) {
 		minhaMao.add(recebida);
