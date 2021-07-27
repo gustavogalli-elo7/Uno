@@ -19,4 +19,9 @@ public class Jogador {
 	public void receberCarta(Carta recebida) {
 		minhaMao.add(recebida);
 	}
+	
+	@Override
+	public String toString() {
+		return nome;
+	}
 }

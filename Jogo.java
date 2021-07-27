@@ -10,9 +10,16 @@ public class Jogo {
 	
 	ArrayList<Jogador> jogadores = new ArrayList<>();
 	
-	public Jogo() {
-		this.prepararDeck();
+	public Jogo(String nome) {
+      this.adicionarJogador(new Jogador(nome));
+      this.prepararDeck();
 	}
+	
+	public void qntBots (int bots){
+      for (int i = 0; i < bots; i++){
+         this.adicionarJogador(new Jogador("Bot " + (i+1)));
+      }
+   }
 	
 	void iniciarJogo() {
 		
