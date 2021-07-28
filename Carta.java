@@ -1,5 +1,3 @@
-package uno;
-
 public class Carta {
 	private String simbolo;
 	private String cor;

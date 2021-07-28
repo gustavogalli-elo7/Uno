@@ -1,5 +1,3 @@
-package uno;
-
 import java.util.ArrayList;
 
 public class Jogo {
