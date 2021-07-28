@@ -3,42 +3,36 @@ package uno;
 import java.util.ArrayList;
 
 public class Jogo {
-	
+
 	int sentido = 1;
 	int jogadorAtual = -1;
 	Deck deck;
-	
+
 	ArrayList<Jogador> jogadores = new ArrayList<>();
-	
-	public Jogo(String nome) {
-      this.adicionarJogador(new Jogador(nome));
-      this.prepararDeck();
+
+	public Jogo() {
+		this.prepararDeck();
 	}
-	
-	public void qntBots (int bots){
-      for (int i = 0; i < bots; i++){
-         this.adicionarJogador(new Jogador("Bot " + (i+1)));
-      }
-   }
-	
+
+
 	void iniciarJogo() {
-		
+
 	}
-	
+
 	void adicionarJogador(Jogador jogador) {
 		this.jogadores.add(jogador);
 	}
-	
+
 	void distribuirCartas() {
 	}
-	
+
 	void fazerJogadorComprar() {
-		
+
 	}
-	
+
 	void prepararDeck() {
 		this.deck = new Deck();
 		System.out.println(this.deck.arrayDeck);
 	}
-	
+
 }
