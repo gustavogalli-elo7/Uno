@@ -8,7 +8,7 @@ public class Loop {
 
     private Jogo jogo;
     
-    private void validaBots(int bots) {
+    private int validaBots(int bots) {
     	boolean adversarioValido = false;
     	
     	while(!adversarioValido) {
@@ -19,9 +19,11 @@ public class Loop {
     			System.out.println("Máximo de adversários é 9 e o mínimo é 1. Tente novamente.");
     			bots = scanner.nextInt();
     		}
-    	}	
+    	}
+    	return bots;
 
     }
+
     
 
     public void iniciarLoop(){
@@ -36,9 +38,8 @@ public class Loop {
         this.adicionaJogador(nome);
 
         System.out.println("Quantos adversários você quer, " + nome + "?");
-        int bots = scanner.nextInt();
         
-        this.validaBots(bots);
+        int bots = this.validaBots(scanner.nextInt());
 
         this.adicionaBots(bots);
 
