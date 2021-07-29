@@ -14,11 +14,10 @@ public class Loop {
 
         this.adicionaJogador(nome);
 
-        System.out.println("Quantos bots você precisa?");
+        System.out.println("Quantos adversários você quer, " + nome + "?");
         int bots = scanner.nextInt();
 
         this.adicionaBots(bots);
-
 
     }
 

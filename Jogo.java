@@ -30,7 +30,8 @@ public class Jogo {
 
 	void prepararDeck() {
 		this.deck = new Deck();
-		System.out.println(this.deck.arrayDeck);
+		// Não é necessário imprimir o deck abaixo
+//		System.out.println(this.deck.arrayDeck);
 	}
 
 }

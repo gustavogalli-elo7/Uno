@@ -7,6 +7,20 @@ public class Main {
 
 		Loop loop = new Loop();
 		loop.iniciarLoop();
+		
+		/* PRÓXIMOS PASSOS
+		 * - distribuir as cartas para o array de jogadores (7 para cada)
+		 * - criar a VIRA (array)
+		 * - determinar a ordem dos jogadores (sortear no array de jogadores)
+		 * - criar a análise das mãos com base na VIRA
+		 * 		- com base na VIRA, calcular na minhaMao:
+		 * 			- quantas cartas com mesmo SIMBOLO
+		 * 			- quantas cartas com mesma COR
+		 * 			- quantos CORINGAS (mudaCor e +4)
+		 * 			- analisar a quantidade de cartas na mao do proximo jogador (para jogar cartas especiais)
+		 * 
+		 *  
+		 * */
 
 
 		// https://pt.wikipedia.org/wiki/Uno_(jogo_de_cartas)
