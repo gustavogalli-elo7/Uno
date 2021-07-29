@@ -43,7 +43,7 @@ public class Loop {
         while(!adversarioValido) {
             adversarioValido = true;
 
-            if(bots > 10 || bots < 1) {
+            if(bots > 9 || bots < 1) {
                 adversarioValido = false;
                 System.out.println("Máximo de adversários é 9 e o mínimo é 1. Tente novamente.");
                 bots = scanner.nextInt();
