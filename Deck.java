@@ -11,28 +11,25 @@ public class Deck {
 	
 	private ArrayList<Carta> criarDeck() {
 		ArrayList<Carta> arrayDeck = new ArrayList<>();
-		String[] cores = {"vermelho", "verde", "amarelo", "azul"};
-		String[] efeitos = {"Pular", "Inverter", "+2"};
+
 		// Adicionando os números
 		for (int i = 0; i <= 9; i++) {
-			for (String cor: cores) {
-				arrayDeck.add(new Carta(i + "", cor));
+			for (Cores cor : Cores.values()) {
+				arrayDeck.add(new Carta(Simbolos.byId.get(i+""), cor));
 				// Só adiciona um 0 de cada cor
-				if (i != 0) arrayDeck.add(new Carta(i + "", cor));
+				if (i != 0) arrayDeck.add(new Carta(Simbolos.byId.get(i+""), cor));
 			}
 		}
 		// Adicionando os efeitos
-		for (String efeito: efeitos) {
-			for(String cor: cores) {
-				arrayDeck.add(new Carta(efeito, cor));
-				arrayDeck.add(new Carta(efeito, cor));
-
+			for(Cores cor : Cores.values()) {
+				arrayDeck.add(new Carta(Simbolos.INVERTER, cor));
+				arrayDeck.add(new Carta(Simbolos.PULAR, cor));
+				arrayDeck.add(new Carta(Simbolos.MAIS_DOIS, cor));
 			}
-		}
 		// Adicionando as pretas
 		for(int i = 0; i < 4; i++) {
-			arrayDeck.add(new Carta("+4", "preto"));
-			arrayDeck.add(new Carta("coringa", "preto"));
+			arrayDeck.add(new Carta(Simbolos.MAIS_QUATRO, Cores.PRETO));
+			arrayDeck.add(new Carta(Simbolos.MUDA_COR, Cores.PRETO));
 		}
 		return arrayDeck;
 	}
