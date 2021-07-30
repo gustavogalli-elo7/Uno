@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Jogador {
 	
 	String nome;
-	
+
 	ArrayList<Carta> minhaMao = new ArrayList<>();
 	
 	public Jogador(String nome){
@@ -16,6 +16,13 @@ public class Jogador {
 	
 	public void receberCarta(Carta recebida) {
 		minhaMao.add(recebida);
+	}
+
+	public void mostraMao(){
+		System.out.println("Mão do Jogador "+ this.nome);
+		for(int i = 0; i < this.minhaMao.size(); i++){
+			System.out.println("[" + i + "] " + this.minhaMao.get(i));
+		}
 	}
 	
 	@Override
