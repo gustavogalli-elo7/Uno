@@ -1,21 +1,21 @@
 public class Carta {
-	private String simbolo;
-	private String cor;
+	private Simbolos simbolo;
+	private Cores cor;
 	
-	public Carta(String simbolo, String cor){
+	public Carta(Simbolos simbolo, Cores cor){
 		this.simbolo = simbolo;
 		this.cor = cor;
 	}
 
 	public String toString() {
-		return simbolo + "-" + cor;
+		return simbolo.getSimbolo() + "-" + cor.getCor();
 	}
 
-	public String getSimbolo() {
+	public Simbolos getSimbolo() {
 		return simbolo;
 	}
 
-	public String getCor() {
+	public Cores getCor() {
 		return cor;
 	}
 	
