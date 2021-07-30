@@ -12,17 +12,15 @@ public class Loop {
         this.jogo = new Jogo();
 
         System.out.println("Seja bem vindo(a)! Qual é o seu nome?");
-
         String nome = this.validaNome(scanner.nextLine());
-
         this.adicionaJogador(nome);
 
         System.out.println("Quantos adversários você quer, " + nome + "?");
-        
         int bots = this.validaBots(scanner.nextInt());
-
         this.adicionaBots(bots);
-
+        
+        jogo.distribuirCartas();
+        
     }
 
 
