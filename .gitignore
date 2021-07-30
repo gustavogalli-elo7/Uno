@@ -5,3 +5,8 @@
 /Loop.class
 /Main.class
 *.class
+.classpath
+.project
+.idea/
+Uno.iml
+out/
